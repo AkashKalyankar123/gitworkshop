@@ -5,8 +5,7 @@ public class VolatileKeyword {
     // a, b
     static  int a = 0, b = 0;
  
-    static // Defining a static void method
-     void method_one()
+    static void method_one() // Defining a static void method
     {
         a++;
         b++;
