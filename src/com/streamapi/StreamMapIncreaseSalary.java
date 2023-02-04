@@ -2,6 +2,7 @@ package com.streamapi;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 public class StreamMapIncreaseSalary {
@@ -24,6 +25,10 @@ public class StreamMapIncreaseSalary {
 		}).collect(Collectors.toList());
 		
 		System.out.println(emp);
+		
+		Map<Object, Object> mp=employess.stream().collect(Collectors.toMap(p->p.getEmpid(), p->p.getEmpname()));
+		System.out.println(mp);
+		
 		
 	
 	}
