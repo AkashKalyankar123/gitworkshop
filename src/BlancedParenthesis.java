@@ -5,11 +5,9 @@ public class BlancedParenthesis {
 	public static boolean isBalenced(String s)
 	{
 		Stack<Character> stack=new Stack<>();
-		
 		for(int i=0;i<s.length();i++)
 		{
 			char c=s.charAt(i);
-			
 			if(c == '(' || c == '{' || c == '[') {
 				
 				stack.push(c);
@@ -26,12 +24,9 @@ public class BlancedParenthesis {
 				{
 					return false;
 				}
-			}
-				
+			}	
 		}
-		
 		return stack.isEmpty();
-		
 	}
 	
 	public static void main(String[] args) {
